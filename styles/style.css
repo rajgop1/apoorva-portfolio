@@ -7,3 +7,90 @@
     --light: #8695A4;
 }
 
+html, body{
+    background-color: white;
+    font-family: "Heebo", serif;
+}
+
+header{
+    padding: 27px 60px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 33px;
+}
+
+header nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#hero{
+    display: flex;
+    padding: 71px 149px;
+}
+
+#profile-description{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+#profile-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#profile-description h1{
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: 700;
+    color: var(--dark);
+    margin: 0;
+}
+
+#profile-description p{
+    font-size: 16px;
+    line-height: 23.5px;
+    font-weight: 400;
+    color: var(--dark);
+    margin: 0;
+}
+
+#profile-description button{
+    background: var(--primary);
+    color: white;
+    font-weight: 500;
+    border: none;
+    width: fit-content;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    justify-content: center;
+    align-items: center;
+}
+
+#social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: center;
+}
+
+#copyright-info{
+    color: var(--dark);
+}
