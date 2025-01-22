@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Select your configuration</h1>
+    <label id="color" for="">Font color</label>
+    <input id="colors" type="color">
+    <br>
+    <label for="styles">Font style</label>
+    <input list="fontstyles" id="styles">
+    <datalist id="fontstyles">
+        <option value="Arial, sans-serif"></option>
+        <option value="Georgia, serif"></option>
+        <option value="Verdana, sans-serif"></option>
+    </datalist>
+    <br>
+    <label for="fontsize">Font size</label>
+    <input list="sizes" id="fontsize">
+    <datalist id="sizes">
+        <option value="16 px"></option>
+        <option value="20px"></option>
+        <option value="25px"></option>
+    </datalist>
+    <button id="btn">Okay</button>
+    <p id="result">
+        Here u got your font style
+    </p>
+       
+   
+</body>
+</html>
