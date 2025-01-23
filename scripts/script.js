@@ -1,12 +1,12 @@
 var color = document.getElementById("colors")
 var style = document.getElementById("styles")
 var size = document.getElementById("fontsize")
-var result = document.getElementById("result").textContent
+var result = document.getElementById("result")
 function motion(){
-result.style.color = "color";
-result.style.fontfamily = "style";
-result.style.fontsize = "size";
+result.style.color = color.value;
+result.style.fontFamily = style.value;
+result.style.fontSize = size.value;
 
 }
-var okay = document.getElementById("btn").addEventListener("click" , motion)
+var okay = document.getElementById("bton").addEventListener("click" , motion)
 
