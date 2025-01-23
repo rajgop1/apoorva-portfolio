@@ -94,3 +94,43 @@ footer{
 #copyright-info{
     color: var(--dark);
 }
+#recent-posts{
+    background-color: var(--aqua);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#recent-posts p{
+    font-size: 22px;
+    padding-left: 148px;
+}
+#recent-posts a{
+    font-size: 16px;
+    padding-right: 148px;
+    align-content: center;
+
+}
+#recent-posts-downcol{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: var(--aqua);
+    padding: 7px 148px 71px;
+}
+#recent-posts-downcol div div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 16px;    
+}
+#recent-posts-downcol div{
+    background-color: white;
+    padding: 23px 23px;    
+}
+#recent-posts-downcol div p{
+    font-size: 16px;
+    font-family: "heebo", serif;
+}   
+#recent-posts-downcol div h1{
+    font-size: 26px;
+}
