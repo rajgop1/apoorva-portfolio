@@ -10,9 +10,7 @@
 html, body{
     background-color: white;
     font-family: "Heebo", serif;
-    width: 1152px;
 }
-
 header{
     padding: 27px 60px;
 }
@@ -95,13 +93,57 @@ footer{
 #copyright-info{
     color: var(--dark);
 }
+#recent-posts{
+    align-content: center;
+    background-color: var(--aqua);
+}
+#recent-posts-header{
+    display: flex;
+    flex-direction: row;
+    gap: 430px;
+    justify-content: center;
+}
+#recent-posts-header p{
+    width: 129px;
+    font-size: 22px;
+    line-height: 60px;
+    text-align: left;
+}
+#recent-posts-header a{
+    width: 208px;
+    height: 20px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 23.5px;
+    
+}
 
-.m-row1{
+#recent-posts-body{
+    gap: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 34px;
+} 
+#recent-posts-body div{
+    padding:24px 24px ;
+    background-color: white;
+    width: 322px;
+    height: 247px;
+    border-radius: 4px;
+    padding: 0;
+}
+
+#recent-posts-body div p1{
     font-size: 26px;
     font-weight: 700px;
     color:black;
+    line-height: 38.19px;
+    width: 374px;
+    height: 85px;
 }
-.m-row2{
+#recent-posts-body div section{
     font-size: 18px;
     font-weight: 400px;
     color: rgb(91, 84, 84);
@@ -109,22 +151,12 @@ footer{
     flex-direction: row;
     gap: 31px;
 }
-.m-row3{
+#recent-posts-body div p2{
     font-size: 16px;
     font-weight: 400px;
     color: rgb(91, 84, 84);
-}
-.flex-row{
-    display: flex;
-    flex-direction: row;
-}
-.margin{
-    margin: 32px 148px ;
-    gap: 20px
-}
-#middle{
-    width: 1152px;
-}
-.spacebtw{
-    justify-content: space-between;
+    line-height: 23.5px;
+    width: 368px;
+    height: 117px;
+    text-align: left;
 }
