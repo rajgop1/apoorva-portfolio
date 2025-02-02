@@ -10,6 +10,7 @@
 html, body{
     background-color: white;
     font-family: "Heebo", serif;
+    width: 1152px;
 }
 
 header{
@@ -94,12 +95,7 @@ footer{
 #copyright-info{
     color: var(--dark);
 }
-.bkcolorblue{
-    background-color: #92cbd7;
-}
-.bkcolorwhite{
-    background-color: white;
-}
+
 .m-row1{
     font-size: 26px;
     font-weight: 700px;
@@ -108,7 +104,7 @@ footer{
 .m-row2{
     font-size: 18px;
     font-weight: 400px;
-    color: rgb(184, 173, 173);
+    color: rgb(91, 84, 84);
     display: flex;
     flex-direction: row;
     gap: 31px;
@@ -116,5 +112,19 @@ footer{
 .m-row3{
     font-size: 16px;
     font-weight: 400px;
-    color: rgb(184, 173, 173);
+    color: rgb(91, 84, 84);
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.margin{
+    margin: 32px 148px ;
+    gap: 20px
+}
+#middle{
+    width: 1152px;
+}
+.spacebtw{
+    justify-content: space-between;
 }
