@@ -97,7 +97,7 @@ footer{
     gap: 26px;
     justify-content: center;
     align-items: center;
-    margin-top: 83px;
+    margin-top: 52px;
 }
 
 #social-links{
@@ -128,6 +128,7 @@ footer{
 #recent-posts{
     height: 396px;
     background-color: var(--aqua);
+    margin-top: 71px;
 }
 
 #recent-posts-header{
@@ -154,6 +155,7 @@ footer{
     line-height: 23.5px;
     text-align: right;
     margin-top: 27px;
+    color: rgb(99, 201, 229);
 }
 #recent-posts-body{
     display: flex;
@@ -183,7 +185,7 @@ footer{
     width: 374px;
     height: 34px;
     gap: 26px;
-    margin: 0px 24px 0px 24px;
+    margin: 17px 24px 0px 24px;
     color: rgb(54, 52, 52);
 }
 .p1{
@@ -262,7 +264,7 @@ footer{
     flex-direction: row;
     gap: 18px;
     width: 858px;
-    margin-bottom: 15px;
+    
 }
 .work{
     display: flex;
@@ -317,7 +319,8 @@ footer{
     width: 594px;
 }
 hr{
-    height: 15px;
-    background-color: #FF6464;
+    width: 100%;
     color: #21243D;
+    margin-bottom: 31px;
+    margin-top: 31px;
 }
