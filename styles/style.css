@@ -91,25 +91,6 @@ header nav a {
     padding: 10px 20px;
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 52px;
-}
-
-#social-links{
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
-    align-items: center;
-}
-
-#copyright-info{
-    color: var(--dark);
-}
 
 
 
@@ -146,6 +127,7 @@ footer{
     line-height: 60px;
     text-align: left;
     margin-top: 7px;
+    margin-bottom: 0px;
 }
 #recent-posts-header a{
     width: 208px;
@@ -189,7 +171,7 @@ footer{
     color: rgb(54, 52, 52);
 }
 .p1{
-    width: 126px;
+    width: 94px;
     height: 34px;
     margin: 0px;
 }
@@ -249,6 +231,7 @@ footer{
     gap: 0px;
     opacity: 0px;
     margin-bottom: 22px;
+    margin-top: 22px;
     font-size: 22px;
     font-weight: 400;
     line-height: 60px;
@@ -258,18 +241,25 @@ footer{
     width: 246px;
     height: 180px;
     border-radius: 6px 0px 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .work-detail{
     display: flex;
     flex-direction: row;
     gap: 18px;
     width: 858px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
     
 }
 .work{
     display: flex;
     flex-direction: column;
     gap: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .work-title{
     font-size: 30px;
@@ -282,20 +272,18 @@ footer{
 .year{
     display: flex;
     flex-direction: row;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 7.45;
+    margin-bottom: 7.45;
 }
 .time{
     font-size: 18px;
     font-weight: 900px;
-    line-height: 60px;
-    width: 42px;
-    height: 60px;
+    width: 60px;
+    height: 25px;
     background-color: #000000;
-    border-radius: 6px 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     color: white;
+    text-align: center;
+    border-radius: 16px;
 }
 .timeAfter{
     font-size: 18px;
@@ -321,6 +309,35 @@ footer{
 hr{
     width: 100%;
     color: #21243D;
-    margin-bottom: 31px;
-    margin-top: 31px;
+    margin-bottom: 35px;
+    margin-top: 22px;
+}
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 52px;
+    height: 182px;
+}
+
+#social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: center;
+}
+
+#copyright-info{
+    color: var(--dark);
 }
