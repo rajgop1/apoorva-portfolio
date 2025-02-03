@@ -97,6 +97,7 @@ footer{
     gap: 26px;
     justify-content: center;
     align-items: center;
+    margin-top: 83px;
 }
 
 #social-links{
@@ -237,6 +238,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-self: center;
+    
 
 }
 #starting{
@@ -260,6 +262,7 @@ footer{
     flex-direction: row;
     gap: 18px;
     width: 858px;
+    margin-bottom: 15px;
 }
 .work{
     display: flex;
@@ -312,4 +315,9 @@ footer{
     margin-top: 0px;
     margin-bottom: 0px;
     width: 594px;
+}
+hr{
+    height: 15px;
+    background-color: #FF6464;
+    color: #21243D;
 }
