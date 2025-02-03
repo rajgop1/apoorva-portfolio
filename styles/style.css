@@ -11,7 +11,6 @@ html, body{
     background-color: white;
     font-family: "Heebo", serif;
 }
-
 header{
     padding: 27px 60px;
 }
@@ -30,24 +29,40 @@ header nav a {
     font-weight: 500;
 }
 
+
+
+
+
+
+
+
+
+
+
 #hero{
     display: flex;
-    padding: 71px 149px;
+    flex-direction: row;
+    width: 856px;
+    justify-self: center;
+    margin-top: 158px;
 }
 
 #profile-description{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 50%;
-}
+    width: 60%;
+    margin-right: 0px;
 
+}
+#profile-img-sctn{
+    width: 40%;
+}
 #profile-image{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+    width: 243px;
+    height: 243px;
+    border-radius: 50%;
+    margin-left: 98px;
 }
 
 #profile-description h1{
@@ -76,12 +91,244 @@ header nav a {
     padding: 10px 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#recent-posts{
+    height: 396px;
+    background-color: var(--aqua);
+    margin-top: 71px;
+}
+
+#recent-posts-header{
+    display: flex;
+    flex-direction: row;
+    width: 856px;
+    gap: 519px;
+    justify-self: center;
+}
+#recent-posts-header p{
+    width: 129px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+#recent-posts-header a{
+    width: 208px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.5px;
+    text-align: right;
+    margin-top: 27px;
+    color: rgb(99, 201, 229);
+}
+#recent-posts-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+#recent-posts-body div{
+    width: 418px;
+    height: 295px;
+    border-radius: 4px 0px 0px 0px;
+    background-color: white;
+    margin-top: 0px;
+}
+.typography-p{
+    width: 374px;
+    height: 85px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 38.19px;
+    text-align: left;
+    margin: 24px 24px 0px 24px;
+}
+.midone{
+    display: flex;
+    flex-direction: row;
+    width: 374px;
+    height: 34px;
+    gap: 26px;
+    margin: 17px 24px 0px 24px;
+    color: rgb(54, 52, 52);
+}
+.p1{
+    width: 94px;
+    height: 34px;
+    margin: 0px;
+}
+.p2{
+    width: 2px;
+    height: 34px;
+    margin: 0px;
+}
+.p3{
+    width: 239px;
+    height: 34px;
+    margin: 0px;
+}
+.typography-p2{
+    margin: 11px 24px 24px 24px;
+    width: 368px;
+    height: 117px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.5px;
+    text-align: left;
+    color: rgb(54, 52, 52);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#featured-works{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    
+
+}
+#starting{
+    width: 152px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+    margin-bottom: 22px;
+    margin-top: 22px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+}
+.img-size{
+    width: 246px;
+    height: 180px;
+    border-radius: 6px 0px 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.work-detail{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    width: 858px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+    
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.work-title{
+    font-size: 30px;
+    font-weight: 700px;
+    line-height: 44.06px;
+    height: 44px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.year{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7.45;
+    margin-bottom: 7.45;
+}
+.time{
+    font-size: 18px;
+    font-weight: 900px;
+    width: 60px;
+    height: 25px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    border-radius: 16px;
+}
+.timeAfter{
+    font-size: 18px;
+    font-weight: 900px;
+    line-height: 60px;
+    color:var(--light);
+    width: 374px;
+    height: 34px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 26px;
+}
+.about-work{
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 23.5px;
+    height: 93px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 594px;
+}
+hr{
+    width: 100%;
+    color: #21243D;
+    margin-bottom: 35px;
+    margin-top: 22px;
+}
+
+
+
+
+
+
+
+
+
 footer{
     display: flex;
     flex-direction: column;
     gap: 26px;
     justify-content: center;
     align-items: center;
+    margin-top: 52px;
+    height: 182px;
 }
 
 #social-links{
