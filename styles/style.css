@@ -432,7 +432,7 @@ footer{
     #recent-posts{
         background-color: var(--aqua);
         margin-top: 58px;
-        width: 375px;
+        width: 100%;
         margin-inline: auto;
         height: 693px;
     }
