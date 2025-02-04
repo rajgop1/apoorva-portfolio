@@ -10,6 +10,8 @@
 html, body{
     background-color: white;
     font-family: "Heebo", serif;
+    width: 100%;
+    margin: 0px;
 }
 header{
     padding: 27px 60px;
@@ -352,9 +354,8 @@ footer{
 
 
 
-@media screen and (max-width: 376px){
-
-
+@media screen and (max-width: 480px){
+        
 
     #hero{
         display: flex;
@@ -459,8 +460,9 @@ footer{
     #recent-posts-header a{
        height: 0px;
        font-size: 0px;
-       width: 0px;
+       width: 100%;
        margin-top: 0px;
+
     }
     #recent-posts-body{
         display: flex;
