@@ -277,13 +277,13 @@ header nav a {
 }
 .time{
     font-size: 18px;
-    font-weight: 900px;
-    width: 60px;
-    height: 25px;
+    font-weight: 900;
+    padding: 10px;
     background-color: #000000;
     color: white;
     text-align: center;
     border-radius: 16px;
+    line-height: 60px;
 }
 .timeAfter{
     font-size: 18px;
@@ -395,7 +395,7 @@ footer{
     
     #profile-description p{
         color: var(--dark);
-        margin: 0;
+        margin-inline: auto;
         width: 312px;
         height: 120px;
         font-size: 16px;
@@ -432,7 +432,9 @@ footer{
     #recent-posts{
         background-color: var(--aqua);
         margin-top: 58px;
-        width: 100%;
+        width: 375px;
+        margin-inline: auto;
+        height: 693px;
     }
     
     #recent-posts-header{
@@ -451,11 +453,14 @@ footer{
         font-weight: 400;
         line-height: 60px;
         text-align: center;
-        
+        margin-inline: auto;
 
     }
     #recent-posts-header a{
-       
+       height: 0px;
+       font-size: 0px;
+       width: 0px;
+       margin-top: 0px;
     }
     #recent-posts-body{
         display: flex;
@@ -465,11 +470,15 @@ footer{
     }
     #recent-posts-body div{
         width: 354px;
-        height: 266px;
+        height: 288px;
+        top: 726px;
+        left: 11px;
+        gap: 0px;
         border-radius: 4px 0px 0px 0px;
         opacity: 0px;
         background-color: white;
-        margin-top: 0px;
+        margin-inline: auto;
+
     }
     .typography-p{
         width: 327px;
@@ -478,6 +487,7 @@ footer{
         font-weight: 700;
         line-height: 30px;
         text-align: left;
+        
     }
     .midone{
         display: flex;
@@ -501,19 +511,20 @@ footer{
         margin: 0px;
     }
     .p3{
-        width: 109px;
+        width: max-content;
         height: 24px;
         margin: 0px;
+
     }
     .typography-p2{
-        margin: 11px 24px 24px 24px;
-        width: 368px;
+        width: 314px;
         height: 117px;
         font-size: 16px;
         font-weight: 400;
         line-height: 23.5px;
         text-align: left;
         color: rgb(54, 52, 52);
+        padding-bottom: 22px;
     }
     
 
@@ -521,6 +532,107 @@ footer{
 
 
 
+    
 
+
+    #featured-works{
+        display: flex;
+        flex-direction: column;
+        margin-inline: auto;
+        width: 100%;
+    
+    }
+    #starting{
+        width: 124px;
+        height: 60px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 60px;
+        text-align: left;
+        margin-inline: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .img-size{
+        width: 339px;
+        height: 230px;
+        gap: 0px;
+        border-radius: 6px 0px 0px 0px;
+        opacity: 0px;
+
+    }
+    .work-detail{
+        display: flex;
+        flex-direction: column;
+        width: 344px;
+        height: 455px;
+        gap: 0px;
+        margin-bottom: 17px;
+    }
+
+    .work{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
+    .work-title{
+        width: 100%;
+        height: 30px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+        margin-top: 0px;
+
+
+    }
+    .year{
+        display: flex;
+        flex-direction: row;
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+    .time{
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 60px;
+        text-align: center;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 16px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+    .timeAfter{
+        width: 78px;
+        height: 24px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.5px;
+        text-align: left;
+        align-self: center;
+    }
+    .about-work{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.5px;
+        text-align: left;
+        width: 344px;
+        height: 96px;
+    }
+    hr{
+        width: 100%;
+        color: #21243D;
+        margin-bottom: 17px;
+    }
+    footer{
+        margin-top: 150px;
+    }
+    
 }
 
