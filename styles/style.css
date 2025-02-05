@@ -293,10 +293,9 @@ header nav a {
 }
 .timeAfter{
     font-size: 18px;
-    font-weight: 900px;
+    font-weight: 90;
     line-height: 60px;
     color:var(--light);
-    width: 374px;
     height: 34px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -304,7 +303,7 @@ header nav a {
 }
 .about-work{
     font-size: 16px;
-    font-weight: 400px;
+    font-weight: 400;
     line-height: 23.5px;
     height: 93px;
     text-align: left;
