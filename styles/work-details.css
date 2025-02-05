@@ -1,0 +1,171 @@
+
+:root{
+    /* colors */
+    --primary: #FF6464;
+    --secondary: #00A8CC;
+    --dark: #21243D;
+    --aqua: #EDF7FA;
+    --light: #8695A4;
+}
+
+.margin-main{
+    width: 681px;
+    margin-inline: auto;
+}
+h2{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 49.94px;
+    text-align: left;
+    margin-top: 92px;
+
+}
+#year{
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    margin-bottom: 23px;
+    margin-top: 30px;
+    align-items: center;
+    
+}
+#year time{
+    font-size: 18px;
+    font-weight: 900;
+    text-align: left;
+    border-radius: 16px;
+    background-color: var(--primary);
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+#year span{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29.38px;
+    text-align: left;
+    height: 34px;
+
+}
+.description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.5px;
+    text-align: left;
+    height: 44px;
+    margin-bottom: 46px;
+
+}
+.imgsize{
+    width: 681px;
+    height: 460px;
+    display: block;
+    margin-inline: auto;
+
+}
+#img1{
+    margin-top: 46px;
+    margin-bottom: 54px;
+}
+h3{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: left;
+    height: 45px;
+    margin: 0px;
+
+}
+h4{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: left;
+    height: 65px;
+    margin: 0px;
+
+}
+.img3{
+    margin: 27px 0px;
+}
+
+
+
+@media screen and (maxwidth: 480px) {
+ 
+    html,body{
+        width: 100%;
+        margin-inline: auto;
+    }
+    .margin-main{
+        width: 339px;
+        margin: 0px 18px;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: left;
+        margin-inline: auto;
+    }
+    #year{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin-bottom: 24px;
+        margin-top: 23px;
+        align-items: center;
+        margin-inline: auto;
+    }
+    #year time{
+        font-size: 18px;
+        font-weight: 900;
+        text-align: left;
+        border-radius: 16px;
+        background-color: var(--primary);
+        color: white;
+        padding: 0px 10px 0px 10px;
+    }
+    #year span{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26.44px;
+        text-align: left;
+        height: 34px;
+    
+    }
+    .imgsize{
+        width: 339px;
+        height: 256px;
+        margin-inline: auto;
+    }
+    #img1{
+        margin-top: 23px;
+        margin-bottom: 23px;
+    }
+    h3{
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 60px;
+        text-align: left;
+        height: 45px;
+        margin: 0px;
+    
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 60px;
+        text-align: left;
+        height: 60px;
+        margin: 0px;
+        margin-inline: auto;
+    
+    }
+    .img3{
+        margin: 23px 0px;
+    }
+    footer{
+       margin-top: 7px;
+    }
+    
+}

@@ -15,7 +15,6 @@ html, body{
 }
 header{
     padding: 27px 60px;
-    width: 100%;
 }
 
 header nav{
@@ -336,6 +335,8 @@ footer{
     align-items: center;
     margin-top: 52px;
     height: 182px;
+    width: 681px;
+    margin-inline: auto;
 }
 
 #social-links{
