@@ -7,6 +7,7 @@
     --light: #8695A4;
 }
 
+
 html, body{
     background-color: white;
     font-family: "Heebo", serif;
@@ -118,7 +119,7 @@ header nav a {
 #recent-posts-header{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 858px;
     gap: 519px;
     justify-self: center;
 }
@@ -151,10 +152,10 @@ header nav a {
 #recent-posts-body div{
     width: 418px;
     height: 295px;
-    border-radius: 4px 0px 0px 0px;
+    border-radius:418 4px 0px 0px 0px;
     background-color: white;
     margin-top: 0px;
-    width: 100%;
+    width: 418px;
 }
 .typography-p{
     width: 374px;
