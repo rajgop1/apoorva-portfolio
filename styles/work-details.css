@@ -8,6 +8,8 @@
     --light: #8695A4;
 }
 
+
+
 .margin-main{
     width: 681px;
     margin-inline: auto;
@@ -24,9 +26,8 @@ h2{
     display: flex;
     flex-direction: row;
     gap: 17px;
-    margin-bottom: 23px;
-    margin-top: 30px;
     align-items: center;
+    padding: 30px 18px 23px 18px;
     
 }
 #year time{
@@ -51,8 +52,8 @@ h2{
     font-weight: 400;
     line-height: 23.5px;
     text-align: left;
-    height: 44px;
     margin-bottom: 46px;
+    margin-inline: auto;
 
 }
 .imgsize{
@@ -63,8 +64,8 @@ h2{
 
 }
 #img1{
-    margin-top: 46px;
-    margin-bottom: 54px;
+    padding-top: 46px;
+    padding-bottom: 54px;
 }
 h3{
     font-size: 30px;
@@ -85,20 +86,17 @@ h4{
 
 }
 .img3{
-    margin: 27px 0px;
+    padding: 27px 0px;
 }
 
 
 
-@media screen and (maxwidth: 480px) {
- 
-    html,body{
-        width: 100%;
-        margin-inline: auto;
-    }
+@media screen and (max-width: 701px) {
+    
+    
     .margin-main{
-        width: 339px;
-        margin: 0px 18px;
+        width: 100% ;
+        padding: 0px 18px;
     }
     h2{
         font-size: 30px;
@@ -111,8 +109,8 @@ h4{
         display: flex;
         flex-direction: row;
         gap: 15px;
-        margin-bottom: 24px;
-        margin-top: 23px;
+        padding-bottom: 24px;
+        padding-top: 23px;
         align-items: center;
         margin-inline: auto;
     }
@@ -130,17 +128,21 @@ h4{
         font-weight: 400;
         line-height: 26.44px;
         text-align: left;
-        height: 34px;
+        width: 100%;
     
     }
     .imgsize{
         width: 339px;
         height: 256px;
         margin-inline: auto;
+        display: block;
     }
     #img1{
-        margin-top: 23px;
-        margin-bottom: 23px;
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+    #img2{
+        padding-top: 24px;
     }
     h3{
         font-size: 26px;
@@ -162,10 +164,10 @@ h4{
     
     }
     .img3{
-        margin: 23px 0px;
+        padding: 23px 0px;
     }
     footer{
-       margin-top: 7px;
+       padding-top: 30px;
     }
     
 }

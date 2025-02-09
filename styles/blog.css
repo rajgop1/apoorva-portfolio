@@ -1,26 +1,34 @@
 
 
-html,body{
-    width: 100%;
-}
+
 :root{
     --grey: #000000;
     --light-grey:  #8695A4;
 
 }
+.hamburger{
+    display: none;
+    height: 0px;
+}
+.line{
+    display: none;
+    height: 0px;
+}
+header{
+    height: 50px;
+}
 
 
 .main-width{
-    width: 682px;
     margin-inline: auto;
+    width: 681px;
 }
 h2{
-    margin-top: 106px;
+    padding-top: 106px;
     font-size: 44px;
     font-weight: 700;
     line-height: 60px;
     text-align: left;
-    height: 54px;
     margin-bottom: 55px;
 
 }
@@ -29,7 +37,6 @@ h3{
     font-weight: 500;
     line-height: 44.06px;
     text-align: left;
-    height: 33px;
 }
 .year-detail{
     display: flex;
@@ -61,20 +68,42 @@ p{
 
 
 
-@media screen and (maxwidth: 480px){
+@media screen and (max-width: 677px){
     
-
-    .main-width{
-        width: 204px;
-        margin-inline: auto;
+    header nav{
+        display: none;
+        height: 0px
     }
+    header nav a{
+        display: none;
+        height: 0px
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+        height: 50px;
+    }
+    .line{
+        display: block;
+        color: black;
+        font: bold;
+        padding-right: 20px;
+        height: 1px;
+    }
+    .main-width{
+        margin-inline: auto;
+        width: 100%;
+    }
+    
     h2{
         margin-top: 24px;
         font-size: 30px;
         font-weight: 700;
         line-height: 60px;
         text-align: left;
-        height: 60px;
         margin-bottom: 18px;
     
     }
@@ -83,7 +112,6 @@ p{
         font-weight: 500;
         line-height: 38.19px;
         text-align: left;
-        height: 38px;
     }
     .year-detail{
         display: flex;
@@ -112,6 +140,6 @@ p{
         text-align: left;
         margin-bottom: 24px;
     }
-    
+}
     
    

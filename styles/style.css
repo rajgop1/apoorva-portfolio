@@ -7,14 +7,26 @@
     --light: #8695A4;
 }
 
-
+*{
+    box-sizing: border-box;
+}
 html, body{
     background-color: white;
     font-family: "Heebo", serif;
     overflow: auto;
-    box-sizing: border-box;
-}
 
+}
+.hamburger{
+    display: none;
+    height: 0px;
+}
+.line{
+    display: none;
+    height: 0px;
+}
+header{
+    height: 50px;
+}
 header{
     width: 100%;
     margin-inline: auto;
@@ -163,7 +175,6 @@ header nav a {
     border-radius: 4px 0px 0px 0px;
     background-color: white;
     margin: 0px;
-    
 }
 .typography-p{
     font-size: 26px;
@@ -336,7 +347,32 @@ footer{
 
 
   
-@media screen and (max-width : 879px) {   
+@media screen and (max-width : 879px) {  
+    
+    
+    header nav{
+        display: none;
+        height: 0px
+    }
+    header nav a{
+        display: none;
+        height: 0px
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+        height: 50px;
+    }
+    .line{
+        display: block;
+        color: black;
+        font: bold;
+        padding-right: 20px;
+        height: 1px;
+    }
     #hero{
         display: flex;
         flex-direction: column-reverse;
@@ -404,7 +440,6 @@ footer{
         background-color: var(--aqua);
         margin-top: 58px;
         width: 100%;
-        overflow: auto;
         margin-inline: auto;
     }
     
@@ -413,7 +448,6 @@ footer{
         text-align: center;
         justify-content: center;
         width: 100%;
-        overflow: auto;
     }
     #recent-posts-header p{
         font-size: 18px;
@@ -437,7 +471,7 @@ footer{
         gap: 17px;
         width: 100%;
         margin-inline: auto;
-        justify-content: center;
+        align-items: center;
      
 
 
@@ -450,7 +484,7 @@ footer{
         width: 354px;
         margin-inline: auto;
         margin: 0px;
-        justify-self: center;
+        
 
 
     }
