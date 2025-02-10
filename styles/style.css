@@ -7,12 +7,31 @@
     --light: #8695A4;
 }
 
+*{
+    box-sizing: border-box;
+}
 html, body{
     background-color: white;
     font-family: "Heebo", serif;
+    overflow: auto;
+
+}
+.hamburger{
+    display: none;
+    height: 0px;
+}
+.line{
+    display: none;
+    height: 0px;
 }
 header{
-    padding: 27px 60px;
+    height: 50px;
+}
+header{
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 27px;
+
 }
 
 header nav{
@@ -45,6 +64,7 @@ header nav a {
     width: 856px;
     justify-self: center;
     margin-top: 158px;
+    position: relative;
 }
 
 #profile-description{
@@ -62,7 +82,8 @@ header nav a {
     width: 243px;
     height: 243px;
     border-radius: 50%;
-    margin-left: 98px;
+    margin-inline: auto;
+    display: block;
 }
 
 #profile-description h1{
@@ -107,21 +128,23 @@ header nav a {
 
 
 #recent-posts{
-    height: 396px;
     background-color: var(--aqua);
     margin-top: 71px;
+    width: 100%; 
+    position: relative;
+    
+
 }
 
 #recent-posts-header{
     display: flex;
     flex-direction: row;
-    width: 856px;
-    gap: 519px;
-    justify-self: center;
+    width: 858px;
+    justify-content: space-between;
+    margin-inline: auto;
+    position: relative;
 }
 #recent-posts-header p{
-    width: 129px;
-    height: 60px;
     font-size: 22px;
     font-weight: 400;
     line-height: 60px;
@@ -130,8 +153,6 @@ header nav a {
     margin-bottom: 0px;
 }
 #recent-posts-header a{
-    width: 208px;
-    height: 20px;
     font-size: 16px;
     font-weight: 400;
     line-height: 23.5px;
@@ -142,58 +163,45 @@ header nav a {
 #recent-posts-body{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     gap: 20px;
+    width: 858px;
+    margin-inline: auto;
+    padding-bottom: 32px;
+    justify-content: center;
+
 }
 #recent-posts-body div{
-    width: 418px;
-    height: 295px;
+
     border-radius: 4px 0px 0px 0px;
     background-color: white;
-    margin-top: 0px;
+    margin: 0px;
 }
 .typography-p{
-    width: 374px;
-    height: 85px;
     font-size: 26px;
     font-weight: 700;
     line-height: 38.19px;
     text-align: left;
-    margin: 24px 24px 0px 24px;
+    margin: 0px;
+    padding: 24px;
+    padding-bottom: 17px;
 }
 .midone{
     display: flex;
     flex-direction: row;
-    width: 374px;
-    height: 34px;
+    width: 100%;
     gap: 26px;
-    margin: 17px 24px 0px 24px;
+    padding: 0px 24px 0px 24px;
     color: rgb(54, 52, 52);
 }
-.p1{
-    width: 94px;
-    height: 34px;
-    margin: 0px;
-}
-.p2{
-    width: 2px;
-    height: 34px;
-    margin: 0px;
-}
-.p3{
-    width: 239px;
-    height: 34px;
-    margin: 0px;
-}
+
 .typography-p2{
-    margin: 11px 24px 24px 24px;
-    width: 368px;
-    height: 117px;
+    padding: 11px 24px 24px 24px;
     font-size: 16px;
     font-weight: 400;
     line-height: 23.5px;
     text-align: left;
     color: rgb(54, 52, 52);
+    margin: 0px;
 }
 
 
@@ -221,21 +229,21 @@ header nav a {
 #featured-works{
     display: flex;
     flex-direction: column;
-    justify-self: center;
-    
+    width: 858px;
+    margin-inline: auto;
+
 
 }
 #starting{
-    width: 152px;
-    height: 60px;
-    gap: 0px;
-    opacity: 0px;
-    margin-bottom: 22px;
-    margin-top: 22px;
+    padding-top: 15px;
+    padding-bottom: 22px;
     font-size: 22px;
     font-weight: 400;
     line-height: 60px;
     text-align: left;
+}
+.img-container{
+    align-content: center;
 }
 .img-size{
     width: 246px;
@@ -243,15 +251,12 @@ header nav a {
     border-radius: 6px 0px 0px 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+    display: block;
 }
 .work-detail{
     display: flex;
     flex-direction: row;
     gap: 18px;
-    width: 858px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    align-items: center;
     
 }
 .work{
@@ -265,46 +270,42 @@ header nav a {
     font-size: 30px;
     font-weight: 700px;
     line-height: 44.06px;
-    height: 44px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 .year{
     display: flex;
     flex-direction: row;
-    margin-top: 7.45;
-    margin-bottom: 7.45;
+    padding: 7.45px;
+    margin: 0px;
+    gap: 26px;
+
 }
 .time{
     font-size: 18px;
-    font-weight: 900px;
-    width: 60px;
-    height: 25px;
+    font-weight: 900;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     background-color: #000000;
     color: white;
     text-align: center;
     border-radius: 16px;
+    align-items: center;
 }
 .timeAfter{
     font-size: 18px;
-    font-weight: 900px;
+    font-weight: 90;
     line-height: 60px;
     color:var(--light);
-    width: 374px;
-    height: 34px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 26px;
+    margin: 0px;
 }
 .about-work{
     font-size: 16px;
-    font-weight: 400px;
+    font-weight: 400;
     line-height: 23.5px;
-    height: 93px;
     text-align: left;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 594px;
+    margin: 0px;
 }
 hr{
     width: 100%;
@@ -328,9 +329,8 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 52px;
-    height: 182px;
+    margin-inline: auto;
 }
-
 #social-links{
     display: flex;
     flex-direction: row;
@@ -341,3 +341,291 @@ footer{
 #copyright-info{
     color: var(--dark);
 }
+
+
+
+
+
+  
+@media screen and (max-width : 879px) {  
+    
+    
+    header nav{
+        display: none;
+        height: 0px
+    }
+    header nav a{
+        display: none;
+        height: 0px
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+        height: 50px;
+    }
+    .line{
+        display: block;
+        color: black;
+        font: bold;
+        padding-right: 20px;
+        height: 1px;
+    }
+    #hero{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 33px;
+        width: 100%;
+    }
+    
+    #profile-description{
+        gap: 21px;
+        width: 100%;
+        margin-top: 34px;
+        margin-inline: auto;
+    
+    }
+    #profile-img-sctn{
+        width: 100%;
+    }
+    #profile-image{
+        border-radius: 50%;
+        display: block;
+        width: 174.38px;
+        height: 180px;
+
+    }
+    
+    #profile-description h1{
+        font-size: 44px;
+        line-height: 60px;
+        font-weight: 700;
+        color: var(--dark);
+        width: 100%;
+    }
+    
+    #profile-description p{
+        color: var(--dark);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+    #profile-description button{
+        background: var(--primary);
+        color: white;
+        border-radius: 2px 0px 0px 0px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 29.38px;
+        margin-top: 27px;
+        margin-inline: auto;
+        
+    }
+    
+
+
+
+
+
+
+
+
+
+    #recent-posts{
+        background-color: var(--aqua);
+        margin-top: 58px;
+        width: 100%;
+        margin-inline: auto;
+    }
+    
+    #recent-posts-header{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #recent-posts-header p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 60px;
+        text-align: center;
+        margin-inline: auto;
+        margin: 0px;
+
+    }
+    #recent-posts-header a{
+       height: 0px;
+       font-size: 0px;
+       width: 100%;
+       margin: 0px;
+
+    }
+    #recent-posts-body{
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        width: 100%;
+        margin-inline: auto;
+        align-items: center;
+     
+
+
+
+    }
+    #recent-posts-body div{
+
+        border-radius: 4px 0px 0px 0px;
+        background-color: white;
+        width: 354px;
+        margin-inline: auto;
+        margin: 0px;
+        
+
+
+    }
+    .typography-p{
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+        
+    }
+    .midone{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        color: rgb(54, 52, 52);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.5px;
+        text-align: left;
+
+    }
+
+    .typography-p2{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.5px;
+        text-align: left;
+        color: rgb(54, 52, 52);
+        padding-bottom: 22px;
+    }
+    
+
+
+
+
+
+    
+
+
+    #featured-works{
+        display: flex;
+        flex-direction: column;
+        margin-inline: auto;
+        width: 100%;
+
+    
+    }
+    #starting{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 60px;
+        text-align: left;
+        margin-inline: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .img-size{
+        width: 339px;
+        height: 230px;
+        border-radius: 6px 0px 0px 0px;
+        margin-inline: auto;
+
+    }
+    .work-detail{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 17px;
+    }
+
+    .work{
+        flex-direction: column;
+        margin-top: 17px;
+        margin-bottom: 17px;
+        margin-inline: auto;
+    }
+    .work-title{
+        width: 100%;
+        height: 30px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+        margin-top: 0px;
+
+
+    }
+    .year{
+        display: flex;
+        flex-direction: row;
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+    .time{
+        font-size: 16px;
+        font-weight: 900;
+        text-align: center;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 16px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+    .timeAfter{
+        width: 78px;
+        height: 24px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.5px;
+        text-align: left;
+        align-self: center;
+    }
+    .about-work{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.5px;
+        text-align: left;
+        width: 344px;
+        height: 96px;
+    }
+    hr{
+        width: 100%;
+        color: #21243D;
+        margin-bottom: 17px;
+    }
+    footer{
+        margin-top: 150px;
+    }
+    
+
+
+
+}
+
+
+
+
+
+
+
+        
