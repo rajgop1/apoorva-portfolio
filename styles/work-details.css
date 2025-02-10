@@ -1,0 +1,173 @@
+
+:root{
+    /* colors */
+    --primary: #FF6464;
+    --secondary: #00A8CC;
+    --dark: #21243D;
+    --aqua: #EDF7FA;
+    --light: #8695A4;
+}
+
+
+
+.margin-main{
+    width: 681px;
+    margin-inline: auto;
+}
+h2{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 49.94px;
+    text-align: left;
+    margin-top: 92px;
+
+}
+#year{
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    align-items: center;
+    padding: 30px 18px 23px 18px;
+    
+}
+#year time{
+    font-size: 18px;
+    font-weight: 900;
+    text-align: left;
+    border-radius: 16px;
+    background-color: var(--primary);
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+#year span{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29.38px;
+    text-align: left;
+    height: 34px;
+
+}
+.description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.5px;
+    text-align: left;
+    margin-bottom: 46px;
+    margin-inline: auto;
+
+}
+.imgsize{
+    width: 681px;
+    height: 460px;
+    display: block;
+    margin-inline: auto;
+
+}
+#img1{
+    padding-top: 46px;
+    padding-bottom: 54px;
+}
+h3{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: left;
+    height: 45px;
+    margin: 0px;
+
+}
+h4{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: left;
+    height: 65px;
+    margin: 0px;
+
+}
+.img3{
+    padding: 27px 0px;
+}
+
+
+
+@media screen and (max-width: 701px) {
+    
+    
+    .margin-main{
+        width: 100% ;
+        padding: 0px 18px;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: left;
+        margin-inline: auto;
+    }
+    #year{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding-bottom: 24px;
+        padding-top: 23px;
+        align-items: center;
+        margin-inline: auto;
+    }
+    #year time{
+        font-size: 18px;
+        font-weight: 900;
+        text-align: left;
+        border-radius: 16px;
+        background-color: var(--primary);
+        color: white;
+        padding: 0px 10px 0px 10px;
+    }
+    #year span{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26.44px;
+        text-align: left;
+        width: 100%;
+    
+    }
+    .imgsize{
+        width: 339px;
+        height: 256px;
+        margin-inline: auto;
+        display: block;
+    }
+    #img1{
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+    #img2{
+        padding-top: 24px;
+    }
+    h3{
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 60px;
+        text-align: left;
+        height: 45px;
+        margin: 0px;
+    
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 60px;
+        text-align: left;
+        height: 60px;
+        margin: 0px;
+        margin-inline: auto;
+    
+    }
+    .img3{
+        padding: 23px 0px;
+    }
+    footer{
+       padding-top: 30px;
+    }
+    
+}
