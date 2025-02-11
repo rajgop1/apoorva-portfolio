@@ -19,78 +19,57 @@ const post = [{
 }
 ]
 
-
 const container = document.getElementById("container")
+let recentPostsBody = [document.createElement("div"),document.createElement("div")]
+let typographyP = [document.createElement("p"),document.createElement("p")]
+let midone = [document.createElement("section"),document.createElement("section")]
+let p1 = [document.createElement("p"),document.createElement("p")]
+let p2= [document.createElement("p"),document.createElement("p")]
+let p3 = [document.createElement("p"),document.createElement("p")]
+let typographyP2 = [document.createElement("p"),document.createElement("p")]
+let num = 0
+
+while (num <2){
+
+    
+container.append(recentPostsBody[num])
 
 
+typographyP[num].textContent=post[num].title
+recentPostsBody[num].append(typographyP[num])
 
-const recentPostsBody = document.createElement("div")
-container.append(recentPostsBody)
+p1[num].textContent = post[num].date
+p2[num].textContent = post[num].sign
+p3[num].textContent = post[num].category
+midone[num].append(p1[num], p2[num] ,p3[num])
 
-const typographyP = document.createElement("p")
-typographyP.textContent=post[0].title
-recentPostsBody.append(typographyP)
-
-
-
-const midone = document.createElement("section")
-const p1 = document.createElement("p")
-const p2= document.createElement("p")
-const p3 = document.createElement("p")
-p1.textContent = post[0].date
-p2.textContent = post[0].sign
-p3.textContent = post[0].category
-midone.append(p1, p2 ,p3)
-
-recentPostsBody.append(midone)
-
-const typographyP2 = document.createElement("p")
-typographyP2.textContent = post[0].description
-
-recentPostsBody.append(typographyP2)
+recentPostsBody[num].append(midone[num])
 
 
+typographyP2[num].textContent = post[num].description
+
+recentPostsBody[num].append(typographyP2[num])
+recentPostsBody[num].style.cssText='background-color:white; width:429px; margin: 20px 0px; padding: 10px 10px;'
 
 
-
-
-
-
-
-
-
-const recentPostsBody2 = document.createElement("div")
-container.append(recentPostsBody2)
-
-
-const typographyP3 = document.createElement("p")
-typographyP3.textContent=post[1].title
-recentPostsBody2.append(typographyP3)
-
-const midone1 = document.createElement("section")
-const p1p = document.createElement("p")
-const p2p= document.createElement("p")
-const p3p = document.createElement("p")
-p1p.textContent = post[1].date
-p2p.textContent = post[1].sign
-p3p.textContent = post[1].category
-
-midone1.append(p1p,p2p,p3p)
-recentPostsBody2.append(midone1)
-
-
-const typographyP4 = document.createElement("p")
-typographyP4.textContent = post[1].description
-
-
-recentPostsBody2.append(typographyP4)
+ num = num + 1 
+}
 
 
 
 
 
-container.style.cssText = 'display: flex;  flex-direction:row; background-color: rgb(99, 201, 229); justify-content:center; gap:20px'
-midone.style.cssText='display: flex;  flex-direction:row; gap:20px; '
-midone1.style.cssText='display: flex;  flex-direction:row;  gap:20px;'
-recentPostsBody.style.cssText='background-color:white; width:429px; margin: 20px 0px; padding: 10px 10px;'
-recentPostsBody2.style.cssText='background-color:white; width:429px; margin: 20px 0px; padding: 10px 10px;'
+
+
+
+
+
+
+
+
+
+
+
+
+container.style.cssText = 'display: flex;  flex-direction:row; background-color: rgb(99, 201, 229); justify-content:center; gap:20px; box-sizing: border-box;'
+midone.style.cssText='display: flex;  flex-direction:row; gap:20px; box-sizing: border-box; '
