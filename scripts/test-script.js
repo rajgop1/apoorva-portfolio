@@ -20,39 +20,34 @@ const post = [{
 ]
 
 const container = document.getElementById("container")
-let recentPostsBody = [document.createElement("div"),document.createElement("div")]
-let typographyP = [document.createElement("p"),document.createElement("p")]
-let midone = [document.createElement("section"),document.createElement("section")]
-let p1 = [document.createElement("p"),document.createElement("p")]
-let p2= [document.createElement("p"),document.createElement("p")]
-let p3 = [document.createElement("p"),document.createElement("p")]
-let typographyP2 = [document.createElement("p"),document.createElement("p")]
-let num = 0
 
-while (num <2){
+while (num >= 0){
 
-    
-container.append(recentPostsBody[num])
+    let recentPostsBody = document.createElement("div")
+container.append(recentPostsBody)
+
+let typographyP = document.createElement("p")
+typographyP.textContent=post[num].title
+recentPostsBody.append(typographyP)
 
 
-typographyP[num].textContent=post[num].title
-recentPostsBody[num].append(typographyP[num])
 
-p1[num].textContent = post[num].date
-p2[num].textContent = post[num].sign
-p3[num].textContent = post[num].category
-midone[num].append(p1[num], p2[num] ,p3[num])
+let midone = document.createElement("section")
+let p1 = document.createElement("p")
+let p2= document.createElement("p")
+let p3 = document.createElement("p")
+p1.textContent = post[num].date
+p2.textContent = post[num].sign
+p3.textContent = post[num].category
+midone.append(p1, p2 ,p3)
 
-recentPostsBody[num].append(midone[num])
+recentPostsBody.append(midone)
 
+let typographyP2 = document.createElement("p")
+typographyP2.textContent = post[num].description
 
-typographyP2[num].textContent = post[num].description
-
-recentPostsBody[num].append(typographyP2[num])
-recentPostsBody[num].style.cssText='background-color:white; width:429px; margin: 20px 0px; padding: 10px 10px;'
-
-
- num = num + 1 
+recentPostsBody.append(typographyP2)
+ num = num + 1
 }
 
 
@@ -71,5 +66,9 @@ recentPostsBody[num].style.cssText='background-color:white; width:429px; margin:
 
 
 
-container.style.cssText = 'display: flex;  flex-direction:row; background-color: rgb(99, 201, 229); justify-content:center; gap:20px; box-sizing: border-box;'
-midone.style.cssText='display: flex;  flex-direction:row; gap:20px; box-sizing: border-box; '
+container.style.cssText = 'display: flex;  flex-direction:row; background-color: rgb(99, 201, 229); justify-content:center; gap:20px'
+midone.style.cssText='display: flex;  flex-direction:row; gap:20px; '
+
+recentPostsBody.style.cssText='background-color:white; width:429px; margin: 20px 0px; padding: 10px 10px;'
+
+r
