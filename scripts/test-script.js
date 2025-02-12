@@ -20,8 +20,8 @@ const post = [{
 ]
 
 const container = document.getElementById("container")
-
-while (num >= 0){
+num = 0
+while (num <= post.length){
 
     let recentPostsBody = document.createElement("div")
 container.append(recentPostsBody)
@@ -29,7 +29,7 @@ container.append(recentPostsBody)
 let typographyP = document.createElement("p")
 typographyP.textContent=post[num].title
 recentPostsBody.append(typographyP)
-
+recentPostsBody.classList.add("recent")
 
 
 let midone = document.createElement("section")
@@ -40,6 +40,7 @@ p1.textContent = post[num].date
 p2.textContent = post[num].sign
 p3.textContent = post[num].category
 midone.append(p1, p2 ,p3)
+midone.classList.add("middle")
 
 recentPostsBody.append(midone)
 
@@ -66,9 +67,6 @@ recentPostsBody.append(typographyP2)
 
 
 
-container.style.cssText = 'display: flex;  flex-direction:row; background-color: rgb(99, 201, 229); justify-content:center; gap:20px'
-midone.style.cssText='display: flex;  flex-direction:row; gap:20px; '
 
 recentPostsBody.style.cssText='background-color:white; width:429px; margin: 20px 0px; padding: 10px 10px;'
 
-r
