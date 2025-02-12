@@ -1,0 +1,145 @@
+
+
+
+:root{
+    --grey: #000000;
+    --light-grey:  #8695A4;
+
+}
+.hamburger{
+    display: none;
+    height: 0px;
+}
+.line{
+    display: none;
+    height: 0px;
+}
+header{
+    height: 50px;
+}
+
+
+.main-width{
+    margin-inline: auto;
+    width: 681px;
+}
+h2{
+    padding-top: 106px;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 55px;
+
+}
+h3{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 44.06px;
+    text-align: left;
+}
+.year-detail{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29.38px;
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+.lightgrey {
+    color: var(--light-grey);
+}
+.grey{
+    color: var(--grey);
+}
+.bgcolornull{
+    background-color: white;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.5px;
+    text-align: left;
+    margin-bottom: 29px;
+}
+
+
+
+@media screen and (max-width: 677px){
+    
+    header nav{
+        display: none;
+        height: 0px
+    }
+    header nav a{
+        display: none;
+        height: 0px
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+        height: 50px;
+    }
+    .line{
+        display: block;
+        color: black;
+        font: bold;
+        padding-right: 20px;
+        height: 1px;
+    }
+    .main-width{
+        margin-inline: auto;
+        width: 100%;
+    }
+    
+    h2{
+        margin-top: 24px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-bottom: 18px;
+    
+    }
+    h3{
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 38.19px;
+        text-align: left;
+    }
+    .year-detail{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height:23.5px;
+        text-align: left;
+        margin-top: 16px;
+        margin-bottom: 17px;
+    }
+    .lightgrey {
+        color: var(--light-grey);
+    }
+    .grey{
+        color: var(--grey);
+    }
+    .bgcolornull{
+        background-color: white;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.5px;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+}
+    
+   
