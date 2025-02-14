@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive User Grid</title>
+    <style>
+        /* Saari default margin, padding hata rahe hain taaki layout clean rahe */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body ka basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8; /* Halka grey background */
+            padding: 20px; /* Thoda space diya hai taaki content chipka na lage */
+        }
+
+        /* 🟢 GRID CONTAINER 🟢 */
+        .grid-container {
+            display: grid; /* Grid system activate kar diya */
+            
+            /* ⚡️ Yeh magic line hai jo columns ko auto-adjust karegi */
+            grid-template-columns: repeat(auto-fit, 200px);
+            
+            gap: 15px; /* Cards ke beech thoda gap */
+            justify-content: center; /* Agar kam items ho to center me dikhaye */
+        }
+
+        /* 🎴 USER CARD STYLING 🎴 */
+        .user-card {
+            width: 200px; /* Fix width har card ki */
+            background: white;
+            padding: 15px;
+            border-radius: 8px; /* Thoda curve effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Halki shadow */
+            text-align: center; /* Andar ka text center me */
+        }
+
+        /* 🖼 User image ke liye styling */
+        .user-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%; /* Circle image */
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        /* 👤 User name */
+        .user-card h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        /* 💼 User ka role */
+        .user-card p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🟢 GRID CONTAINER START 🟢 -->
+    <div class="grid-container">
+        <!-- 👤 USER CARDS -->
+        <div class="user-card">
+            <img src="https://i.pravatar.cc/100?img=1" alt="User 1">
+            <h3>Purva</h3>
+            <p>Frontend Developer</p>
+        </div>
+
+        <div class="user-card">
+            <img src="https://i.pravatar.cc/100?img=2" alt="User 2">
+            <h3>Rajgopal</h3>
+            <p>Fullstack Developer</p>
+        </div>
+
+        <div class="user-card">
+            <img src="https://i.pravatar.cc/100?img=3" alt="User 3">
+            <h3>Michael Brown</h3>
+            <p>Backend Developer</p>
+        </div>
+
+        <div class="user-card">
+            <img src="https://i.pravatar.cc/100?img=4" alt="User 4">
+            <h3>Sarah Wilson</h3>
+            <p>Product Manager</p>
+        </div>
+
+        <div class="user-card">
+            <img src="https://i.pravatar.cc/100?img=5" alt="User 5">
+            <h3>David Johnson</h3>
+            <p>Data Scientist</p>
+        </div>
+
+        <div class="user-card">
+            <img src="https://i.pravatar.cc/100?img=6" alt="User 6">
+            <h3>Emily Davis</h3>
+            <p>Marketing Specialist</p>
+        </div>
+
+        <div class="user-card">
+            <img src="https://i.pravatar.cc/100?img=7" alt="User 7">
+            <h3>William Clark</h3>
+            <p>Full Stack Developer</p>
+        </div>
+
+        <div class="user-card">
+            <img src="https://i.pravatar.cc/100?img=8" alt="User 8">
+            <h3>Sophia Martinez</h3>
+            <p>HR Manager</p>
+        </div>
+    </div>
+    <!-- 🟢 GRID CONTAINER END 🟢 -->
+
+</body>
+</html>
