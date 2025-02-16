@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html{
+            background-color: rgb(181, 230, 230);
+        }
         .heading{
             width: 100%;
-        
         }
 
         h1{
@@ -62,13 +64,11 @@
     
 </body>
 <script>
-    let content = document.getElementsByClassName("content")
-    let num = 1
-    content.addEventListener('mouseover',()=>{
-        content.classlist.add("hower")
-    })
-    content.addEventListener('mouseout',()=>{
-        content.classlist.add("hower")
-    })
+    let content = document.getElementsByClassName("content");
+    console.log(content)
+    content.addEventListener("mouseover",myfunction)
+    function myfunction(){
+        content.style.backgroundColor = 'yellow'
+    }
 </script>
 </html>
